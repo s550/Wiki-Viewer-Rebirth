@@ -5,22 +5,23 @@ import SearchBar from './components/searchbar'
 import _ from 'lodash';
 import RandoButton from './components/randobutton'
 import SearchResults from './components/searchresults';
-
+import 'bulma/css/bulma.css';
 class App extends Component {
   constructor(props){
     super(props);
     this.state={
       articles: [],
-      term: null
-
+      term: null,
+      loading: false
     }
+
   }
 componentWillMount(){
-  this.wikiSearch('Wikipedia');
+  // this.wikiSearch('Wikipedia');
 }
 
 wikiSearch(term){
-  axios.get('https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles='+ term +'&prop=revisions&rvlimit=10&rvprop=content&list=allpages&apfrom='+ term +'&aplimit=10&alprop=ids|title&format=json')
+  axios.get('https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles='+ term +'&prop=revisions&rvlimit=10&rvprop=content&list=allpages&apfrom='+ term +'&aplimit=5&alprop=ids|title&format=json')
     .then((response) => {
       console.log(response)
       this.setState({articles:response.data.query.allpages}, function(){
@@ -35,13 +36,13 @@ wikiSearch(term){
 
 
   render() {
-    const qwikSearch = _.debounce((term) => {this.wikiSearch(term)}, 300)
+    // const qwikSearch = _.debounce((term) => {this.wikiSearch(term)}, 300)
 
 
     return (
       <div className="App">
       <h1 className="header">Wikipedia Search</h1>
-      <SearchBar onSearch={qwikSearch}/>
+      <SearchBar/>
       <RandoButton />
       <SearchResults articles={this.state.articles}/>
       </div>

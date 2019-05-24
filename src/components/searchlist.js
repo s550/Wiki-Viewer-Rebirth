@@ -1,12 +1,18 @@
 import React from 'react';
-
+import MicrolinkCard from '@microlink/react';
 const SearchList = ({article}) => {
   const Link = 'http://en.wikipedia.org/?curid=' + article.pageid;
   return(
-    <div>
-    <li className="content">
-      <a href={Link} target="blank">{article.title}</a>
-    </li>
+    <div className="column">
+      <div className="columns">
+      <MicrolinkCard
+        url={Link}
+      
+      
+      
+      />
+      
+      </div>
   </div>
   );
 }
