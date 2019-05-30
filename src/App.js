@@ -14,10 +14,11 @@ class App extends Component {
       term: null,
       loading: false
     }
-
+    // binding wikiSearch allows it to set the state of articles when updated through searchbar
+    this.wikiSearch = this.wikiSearch.bind(this);
   }
 componentWillMount(){
-  // this.wikiSearch('Wikipedia');
+  this.wikiSearch('Wikipedia');
 }
 
 wikiSearch(term){
@@ -36,13 +37,13 @@ wikiSearch(term){
 
 
   render() {
-    // const qwikSearch = _.debounce((term) => {this.wikiSearch(term)}, 300)
+    // const qwikSearch = this.wikiSearch(term)
 
 
     return (
       <div className="App">
       <h1 className="header">Wikipedia Search</h1>
-      <SearchBar/>
+      <SearchBar wikiSearch={this.wikiSearch}/>
       <RandoButton />
       <SearchResults articles={this.state.articles}/>
       </div>
