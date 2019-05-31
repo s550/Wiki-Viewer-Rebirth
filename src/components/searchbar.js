@@ -13,7 +13,7 @@ class SearchBar extends Component{
   render(){
     return(
       <form id="search-bar" onSubmit={this.termSubmit}>
-        <input className="bar" placeholder="Enter Search Term" name="" value={this.state.term} onChange={this.onInputChange}/>
+        <input className="bar useFontAwesomeFamily" placeholder="&#xf266;   Enter Search Term" name="" value={this.state.term} onChange={this.onInputChange}/>
         <button type="submit" className="btn"><i className="fa fa-search"></i></button>
         {/* <input type="submit" id="schbtn" className="btn" value="Go!"/> */}
       </form>
@@ -23,7 +23,6 @@ class SearchBar extends Component{
   onInputChange(event){
     // sets the state to the current search term
     this.setState({term: event.target.value});
-
     // pulls qwicksearch from searchbar on app.js
     // this.props.onSearch(this.state.term);
     
@@ -33,6 +32,7 @@ class SearchBar extends Component{
     e.preventDefault();
     console.log(this.state.term + " Was submitted");
     this.props.wikiSearch(this.state.term);
+    this.setState({term: ''});
   }
 
 }

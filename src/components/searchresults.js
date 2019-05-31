@@ -9,7 +9,7 @@ const SearchResults = (props) =>{
   });
   return  (
     <div className="container">
-    <ul>
+    <ul className="columns">
       {Results}
     </ul>
   </div>

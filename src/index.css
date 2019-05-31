@@ -12,8 +12,19 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* max-width: 100%;
+  min-width: 100%; */
 
+}
 
+.dwlKqe{
+  min-width: 300px !important;
+}
+.column{
+  /* margin-left: -0.75rem !important;
+  margin-right: -0.75rem !important;
+  margin-top: -0.75rem !important; */
+  /* flex-wrap: wrap; */
 }
 
 .container ul{
@@ -98,7 +109,19 @@ border-bottom-left-radius: 0px;
   margin:0;
   text-transform: uppercase;
   font-weight:500;
-  font-family: 'Charmonman', cursive;
+  font-family: 'K2D', sans-serif;
+  font-size: 3rem;
+}
+
+#title{
+  color: #cc2a90;
+}
+
+.mini-heading{
+  color: #2f4f4f;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
 .content a{
@@ -124,6 +147,25 @@ border-bottom-left-radius: 0px;
   margin: 2rem 0;
 }
 
+.useFontAwesomeFamily::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.useFontAwesomeFamily:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.useFontAwesomeFamily::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.useFontAwesomeFamily:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.useFontAwesomeFamily::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.useFontAwesomeFamily::placeholder { /* Most modern browsers */
+  font-family: "Font Awesome 5 Brands" !important;
+}
+
 /*Screen Sizes 250px and up  */
 
 @media(min-width:250px){
@@ -140,5 +182,12 @@ border-bottom-left-radius: 0px;
   .btn{
     padding:0.5rem 2rem;
     font-size: 1rem;
+  }
+}
+
+/* Screen Size 750px and up */
+@media(min-width:750px){
+  .dwlKqe{
+    /* max-width: 600px; */
   }
 }
