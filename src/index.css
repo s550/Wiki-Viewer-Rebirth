@@ -20,14 +20,17 @@ body{
 
 }
 
-.dwlKqe{
-  min-width: 300px !important;
+header{
+  margin-top:-30px;
+  margin-bottom:25px;
 }
-.column{
-  /* margin-left: -0.75rem !important;
-  margin-right: -0.75rem !important;
-  margin-top: -0.75rem !important; */
-  /* flex-wrap: wrap; */
+
+.dwlKqe{
+  /* min-width: 300px !important; */
+  width: 100%;
+}
+.columns{
+ /* width: 100%; */
 }
 
 .container ul{
@@ -38,6 +41,7 @@ body{
 #search-bar{
   margin:20px;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 
@@ -53,15 +57,15 @@ body{
   border-top-right-radius:0px;
   border-bottom-right-radius:0px;
   border: solid 2px #2f4f4f;
-  width: 50%;
+  width: 70%;
   padding:10px;
   outline: none;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 #search-bar button.btn{
 padding: 10px;
-font-size: 16px;
+font-size: 1.5rem;
 border: 2px solid #2f4f4f;
 cursor: pointer;
 -moz-border-radius-topleft: none;
@@ -70,6 +74,7 @@ cursor: pointer;
 -webkit-border-bottom-left-radius:0px;
 border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
+font-family: inherit;
 
 }
 
@@ -86,9 +91,11 @@ border-bottom-left-radius: 0px;
   margin: 1rem 0;
   color:#fff;
   text-shadow: 2px 2px #2f4f4f;
-  font-family: 'Playfair Display', serif;
   text-decoration: none;
   transition: background 500ms ease;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
 }
 
 
@@ -111,9 +118,10 @@ border-bottom-left-radius: 0px;
   color: #2f4f4f;
   margin:0;
   text-transform: uppercase;
-  font-weight:500;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 3rem;
+  font-weight:800;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 10px;
 }
 
 #title{
@@ -125,6 +133,9 @@ border-bottom-left-radius: 0px;
   font-size: 2rem;
   text-align: center;
   font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top:-40px;
 }
 
 .content a{
@@ -172,25 +183,38 @@ border-bottom-left-radius: 0px;
 /*Screen Sizes 250px and up  */
 
 @media(min-width:250px){
-  .btn{
+  /* .btn{
     padding: 0.4rem 0.8rem;
     font-size: 0.75rem;
-  }
+  } */
 }
 
 
 
 /*Screen Size 500px and up  */
 @media(min-width:450px){
-  .btn{
+  /* .btn{
     padding:0.5rem 2rem;
     font-size: 1rem;
-  }
+  } */
 }
 
-/* Screen Size 750px and up */
-@media(min-width:750px){
-  .dwlKqe{
-    /* max-width: 600px; */
+/* Screen Size 769px and up */
+@media(min-width:769px){
+  .columns{
+    width:100%;
+  }
+
+  #search-bar input.bar{
+    width:50%;
+    font-size: 1rem;
+  }
+
+  #search-bar button.btn{
+    font-size: 1rem;
+  }
+
+  .btn{
+    font-size: 1rem;
   }
 }
