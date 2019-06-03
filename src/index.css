@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Charmonman|K2D|Playfair+Display');
+/* @import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Charmonman|K2D|Playfair+Display'); */
 /*'Playfair Display',serif; 'K2D', sans-serif;'Charmonman',cursive;'Chakra Petch', sans-serif;  */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Anton|Oxygen|PT+Sans|Poppins|Ramabhadra|Roboto+Slab&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans|Poppins|Ramabhadra|Roboto|Roboto+Slab&display=swap'); */
+/* 'Roboto', sans-serif; 'Roboto Slab', serif; 'PT Sans', sans-serif; 'Poppins', sans-serif; 'Ramabhadra', sans-serif; */
 
 body{
   margin:0;
   height:auto;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -83,7 +86,7 @@ border-bottom-left-radius: 0px;
   margin: 1rem 0;
   color:#fff;
   text-shadow: 2px 2px #2f4f4f;
-  font-family: 'K2D', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-decoration: none;
   transition: background 500ms ease;
 }
@@ -109,7 +112,7 @@ border-bottom-left-radius: 0px;
   margin:0;
   text-transform: uppercase;
   font-weight:500;
-  font-family: 'K2D', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 3rem;
 }
 
@@ -121,7 +124,7 @@ border-bottom-left-radius: 0px;
   color: #2f4f4f;
   font-size: 2rem;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .content a{
