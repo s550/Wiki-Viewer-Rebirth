@@ -60,12 +60,12 @@ header{
   width: 70%;
   padding:10px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.625em;
 }
 
 #search-bar button.btn{
 padding: 10px;
-font-size: 1.5rem;
+font-size: 1.688em;
 border: 2px solid #2f4f4f;
 cursor: pointer;
 -moz-border-radius-topleft: none;
@@ -85,7 +85,7 @@ font-family: inherit;
   -moz-border-radius: 5px;
   /* -webkit-border-radius: 5px; */
   border-radius: 5px;
-  border:0.5px #333 solid;
+  border:2px #333 solid;
   padding: 8px 32px;
   box-shadow: 0 0 #2f4f4f;
   margin: 1rem 0;
@@ -180,23 +180,174 @@ font-family: inherit;
   font-family: "Font Awesome 5 Brands" !important;
 }
 
-/*Screen Sizes 250px and up  */
+/*Screen Sizes 319px and up  */
 
-@media(min-width:250px){
-  /* .btn{
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
-  } */
+@media(min-width:319px){
+  .header{
+    font-size: 1.5em;
+  }
+
+  .mini-heading{
+    font-size:.8em;
+  }
+
+  .btn{
+    font-size: 12px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 12px
+  }
+
+  #search-bar button.btn{
+    font-size: 12px;
+  }
+}
+
+/* Screen Sizes 366px and up */
+
+@media(min-width:366px){
+  .header{
+    font-size: 2em;
+  }
+
+  .mini-heading{
+    font-size: .8em;
+  }
+
+  .btn{
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 14px
+  }
+
+  #search-bar button.btn{
+    font-size: 14px;
+  }
+}
+
+/* Screen Sizes 412px and up */
+
+@media(min-width:412px){
+  .header{
+    font-size: 2.5em;
+  }
+
+  .mini-heading{
+    font-size: 1em;
+  }
+
+  .btn{
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 15px
+  }
+
+  #search-bar button.btn{
+    font-size: 15px;
+  }
 }
 
 
+/*Screen Size 459px and up  */
+@media(min-width:459px){
+  .header{
+    font-size: 3em;
+  }
 
-/*Screen Size 500px and up  */
-@media(min-width:450px){
+  .mini-heading{
+    font-size: 1.1em;
+  }
+
+  .btn{
+    font-size: 15px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 16px
+  }
+
+  #search-bar button.btn{
+    font-size: 16px;
+  }
+}
+
+/* Screen Size 505px and up */
+@media(min-width:505px){
+  .header{
+    font-size: 3.5em;
+  }
+
+  .mini-heading{
+    font-size: 1.2em;
+  }
+
   /* .btn{
-    padding:0.5rem 2rem;
-    font-size: 1rem;
+    font-size: 12px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 12px
+  }
+
+  #search-bar button.btn{
+    font-size: 12px;
   } */
+}
+/* Screen Size 551px and up */
+@media(min-width:551px){
+  .header{
+    font-size: 4em;
+  }
+
+  .mini-heading{
+    font-size: 1.5em;
+  }
+
+  .btn{
+    font-size: 16px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 18px
+  }
+
+  #search-bar button.btn{
+    font-size: 18px;
+  }
+}
+/* Screen Size 598px and up */
+@media(min-width:598px){
+  .header{
+    font-size: 4.5em;
+  }
+
+  .mini-heading{
+    font-size: 2em;
+  }
+
+  .btn{
+    font-size: 17px;
+    padding: 9px 10px;
+  }
+
+  #search-bar input.bar{
+    font-size: 19px
+  }
+
+  #search-bar button.btn{
+    font-size: 20px;
+  }
 }
 
 /* Screen Size 769px and up */
@@ -207,14 +358,14 @@ font-family: inherit;
 
   #search-bar input.bar{
     width:50%;
-    font-size: 1rem;
+    font-size: 22px;
   }
 
   #search-bar button.btn{
-    font-size: 1rem;
+    font-size: 23px;
   }
 
   .btn{
-    font-size: 1rem;
+    font-size: 20px;
   }
 }
