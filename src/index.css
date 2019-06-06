@@ -184,7 +184,7 @@ font-family: inherit;
 
 @media(min-width:319px){
   .header{
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .mini-heading{
@@ -209,7 +209,7 @@ font-family: inherit;
 
 @media(min-width:366px){
   .header{
-    font-size: 2em;
+    font-size: 1.9em;
   }
 
   .mini-heading{
@@ -234,7 +234,7 @@ font-family: inherit;
 
 @media(min-width:412px){
   .header{
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
 
   .mini-heading{
@@ -257,9 +257,10 @@ font-family: inherit;
 
 
 /*Screen Size 459px and up  */
+/* 468 moz */
 @media(min-width:459px){
   .header{
-    font-size: 3em;
+    font-size: 2.9em;
   }
 
   .mini-heading{
@@ -281,9 +282,10 @@ font-family: inherit;
 }
 
 /* Screen Size 505px and up */
+/* 516 for moz */
 @media(min-width:505px){
   .header{
-    font-size: 3.5em;
+    font-size: 3.3em;
   }
 
   .mini-heading{
@@ -306,7 +308,7 @@ font-family: inherit;
 /* Screen Size 551px and up */
 @media(min-width:551px){
   .header{
-    font-size: 4em;
+    font-size: 3.8em;
   }
 
   .mini-heading{
@@ -327,9 +329,10 @@ font-family: inherit;
   }
 }
 /* Screen Size 598px and up */
+/* 612 for moz */
 @media(min-width:598px){
   .header{
-    font-size: 4.5em;
+    font-size: 4.3em;
   }
 
   .mini-heading{
