@@ -26,5 +26,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://s550.github.io/wiki-viewer-rebirth"
 }
