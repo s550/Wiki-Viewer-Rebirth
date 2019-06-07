@@ -30,7 +30,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://s550.github.io/wiki-viewer-rebirth/",
+  "homepage": "https://s550.github.io/Wiki-Viewer-Rebirth/",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
