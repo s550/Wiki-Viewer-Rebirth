@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/Wiki-Viewer-Rebirth/precache-manifest.b36d578e1a1d48ba5fb6caca5a2e4614.js"
+  "/Wiki-Viewer-Rebirth/precache-manifest.7545cae6f7f84d8b3cbf6c61ee2442d9.js"
 );
 
 workbox.clientsClaim();
