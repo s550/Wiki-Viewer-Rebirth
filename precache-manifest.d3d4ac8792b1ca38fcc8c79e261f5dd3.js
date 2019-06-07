@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Wiki-Viewer-Rebirth/static/css/1.4305c3f7.chunk.css"
   },
   {
-    "revision": "e04332d278ece77a6f96435298510e83",
+    "revision": "00501698dc361d836177808889cf0682",
     "url": "/Wiki-Viewer-Rebirth/index.html"
   }
 ];
