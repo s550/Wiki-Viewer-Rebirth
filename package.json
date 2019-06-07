@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@microlink/react": "^3.0.5",
-    "axios": "^0.18.0",
-    "bulma": "^0.7.4",
+    "axios": "^0.19.0",
+    "bulma": "^0.7.5",
     "lodash": "^4.17.11",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -19,7 +19,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": "react-app"
