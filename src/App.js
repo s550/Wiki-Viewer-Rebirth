@@ -23,7 +23,7 @@ class App extends Component {
 // }
 // Function that takes a serch tearm for an arguement and passes it to an axios get request
 wikiSearch(term){
-  axios.get('https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles='+ term +'&prop=revisions&rvlimit=10&rvprop=content&list=allpages&apfrom='+ term +'&aplimit=3&alprop=ids|title&format=json')
+  axios.get('https://secret-ocean-49799.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles='+ term +'&prop=revisions&rvlimit=10&rvprop=content&list=allpages&apfrom='+ term +'&aplimit=3&alprop=ids|title&format=json')
     .then((response) => {
       console.log(response)
       this.setState({articles:response.data.query.allpages}, function(){
