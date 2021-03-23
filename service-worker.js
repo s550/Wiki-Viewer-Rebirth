@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/Wiki-Viewer-Rebirth/precache-manifest.d3d4ac8792b1ca38fcc8c79e261f5dd3.js"
+  "/Wiki-Viewer-Rebirth/precache-manifest.1cae297d93988ab37e44c75b341c8955.js"
 );
 
 workbox.clientsClaim();
@@ -30,5 +30,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/Wiki-Viewer-Rebirth/index.html", {
   
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
